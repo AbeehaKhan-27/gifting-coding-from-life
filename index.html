@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Coding from Life</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="base.css" type="text/css" />
+	<style>
+		/* put your CSS here */
+		.canvas {
+			background-color: rgb(233, 62, 43);
+			position: relative;
+		}
+		.apple {
+			height: 70px;
+			width: 70px;
+			background: #db2a2a;
+			background: radial-gradient(circle, rgba(219, 42, 42, 1) 0%, rgba(130, 36, 36, 1) 100%, rgba(235, 192, 192, 1) 49%);
+			border-radius: 45px;
+			position: absolute;
+			bottom: 80px;
+			left: 700px;
+		}
+		.vase {
+			height: 345px;
+			width: 200px;
+			border-right: 1px solid white;
+			border-left: 1px solid white;
+			position: absolute;
+			bottom: 80px;
+			left: 500px;
+		}
+		.vase-bottom {
+			height:70px;
+			width: 202px;
+			right: -2px;
+			background-color: gainsboro;
+			opacity: 70%;
+			position: absolute;
+			bottom: -30px;
+			border-radius: 50%;
+		}
+		.vase-top {
+			height: 85px;
+			width: 202px;
+			position: absolute;
+			border-radius: 50%;
+			border: 2px solid white;
+			top: -35px;
+			right: -2px;
+		}
+		.flower {
+			height: 450px;
+			width: 50px;
+			position: absolute;
+			bottom: 0;
+			right: 80px;
+			transform: rotate(-15deg);
+		}
+		.stem {
+			height: 100%;
+			width: 10px;
+			background-color: green;
+			border-radius: 10px;
+		}
+		.petal.one {
+			height: 10px;
+			width: 40px;
+			transform: rotate(50deg);
+			background-color: yellow;
+			border-radius: 100%;
+			position: absolute;
+			top: -10px;
+			right: 38px;
+		}
+		.petal.two {
+			height: 10px;
+			width: 40px;
+			transform: rotate(67deg);
+			background-color: yellow;
+			border-radius: 100%;
+			position: absolute;
+			top: -15px;
+			right: 30px;
+		}
+		.petal.three {
+			height: 10px;
+			width: 40px;
+			transform: rotate(85deg);
+			background-color: yellow;
+			border-radius: 100%;
+			position: absolute;
+			top: -18px;
+			right: 20px;
+		}
+		.petal.four {
+			height: 10px;
+			width: 40px;
+			transform: rotate(110deg);
+			background-color: yellow;
+			border-radius: 100%;
+			position: absolute;
+			top: -17px;
+			right: 12px;
+		}
+		.petal.five {
+			height: 10px;
+			width: 40px;
+			transform: rotate(40deg);
+			background-color: yellow;
+			border-radius: 100%;
+			position: absolute;
+			top: -5px;
+			right: 45px;
+		}
+		.flower.two {
+			height: 410px;
+			width: 50px;
+			position: absolute;
+			bottom: 0;
+			right: 50px;
+			transform: rotate(15deg);	
+		}
+		.ruler {
+			height: 20px;
+			width: 250px;
+			background: #696b6b;
+			background: linear-gradient(90deg, rgba(105, 107, 107, 1) 43%, rgba(168, 168, 168, 1) 75%, rgba(204, 200, 200, 1) 100%);
+			position: absolute;
+			bottom: 50px;
+			left: 610px;
+			transform: rotate(-20deg);
+		}
+		.plate {
+			height: 68px;
+			width: 183px;
+			background: rgba(255, 255, 255, 0.5);
+			border-radius: 50%;
+			position: absolute;
+			top: 350px;
+			right: 550px;
+			z-index: 1;
+			border: 2px solid white;
+		}
+		.cake {
+			width: 0;
+			height: 0;
+			border-top: 40px solid transparent;
+			border-bottom: 40px solid transparent;
+			border-left: 128px solid #954d11;
+			transform: rotate(160deg);
+			position: absolute;
+			bottom: 0;
+			left: 18px;
+		}
+		.candle {
+			background: white;
+			height: 50px;
+			width: 5px;
+			position: absolute;
+			bottom: 61px;
+			right: 60px;
+		}
+		.flame {
+			background: yellow;
+			opacity: 0.5;
+			height: 30px;
+			width: 16px;
+			border-radius: 50%;
+			position: absolute;
+			bottom: 117px;
+			right: 54px;
+			animation: 0.75s linear 1s infinite alternate-reverse flicker;
+		}
+	</style>
+</head>
+
+<body>
+
+  <div class="canvas">
+
+		<!-- put your objects here -->
+		<div class="ruler"></div> 
+		<div class="apple"></div>
+		 <div class="vase">
+			<div class="vase-bottom"></div>
+			<div class="vase-top"></div>
+			<div class="flower">
+				<div class="stem"></div>
+				<div class="petal one"></div>
+				<div class="petal two"></div>
+				<div class="petal three"></div>
+				<div class="petal four"></div>
+				<div class="petal five"></div>
+			 </div>
+			 <div class="flower two">
+				<div class="stem"></div>
+				<div class="petal one"></div>
+				<div class="petal two"></div>
+				<div class="petal three"></div>
+				<div class="petal four"></div>
+				<div class="petal five"></div>
+			 </div>
+		 	</div>
+			 <div class="plate">
+				<div class="cake"></div>
+				<div class="candle"></div>
+				<div class="flame"></div>
+			  </div>
+		 
+
+  </div>
+
+</body>
+
+</html>
